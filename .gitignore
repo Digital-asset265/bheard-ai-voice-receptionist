@@ -1,0 +1,81 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Local development / editor
+.vscode/
+
+# Local archives
+*.tar.gz
+
+# Development snapshots / backups
+*.BACKUP-*.js
+*.backup*.js
+*.BROKEN-*.js
+*.CHECKPOINT-*.js
+*.GOLDEN-*.js
+*.STABLE-*.js
+*.MULTI-INDUSTRY-WIP*.js
+*.PRODUCTION-CORE-*.js
+
+# BHeard historical server snapshots
+dev-server.BACKUP-*.js
+voice-ws-server.BROKEN-*.js
+voice-ws-server.CHECKPOINT-*.js
+voice-ws-server.GOLDEN-*.js
+voice-ws-server.MULTI-INDUSTRY-WIP*.js
+voice-ws-server.PRODUCTION-CORE-*.js
+voice-ws-server.STABLE-*.js
+voice-ws-server.backup*.js
+
+# Legacy / disabled local files
+next.config.server.backup.ts
+_mobile_disabled_api/
+
+# Supabase local state
+supabase/.temp/
+
+# IDE metadata
+android/.idea/
+
+# Backup files anywhere in the project
+*.backup-*
+*.bak
